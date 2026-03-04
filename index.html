@@ -10,11 +10,18 @@
    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <style>
        /* ===== FIX FOR WHITE LINES ===== */
+       html, body {
+           width: 100%;
+           max-width: 100%;
+           overflow-x: hidden;
+           margin: 0;
+           padding: 0;
+       }
        html {
            background: var(--quantum-dark-1);
        }
        body {
-           overflow-x: hidden;
+           background: var(--quantum-dark-1);
        }
        /* ===== QUANTUM CORE VARIABLES ===== */
        :root {
@@ -156,9 +163,7 @@
 
        body {
            font-family: var(--quantum-font-body);
-           background: var(--quantum-dark-1);
            color: var(--quantum-light-2);
-           overflow-x: hidden;
            min-height: 100vh;
            opacity: 0;
            animation: quantumEntrance 1s forwards 0.3s;
